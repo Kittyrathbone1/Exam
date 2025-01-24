@@ -2,9 +2,7 @@ let cats = [];
 let addButton // arrays 
 let backgroundImage;
 
-function preload(){
-    backgroundImage = loadImage ('assets/ background.jpg')
-}
+
 function setup() {
   createCanvas(1000,800); // making the canvas size 
   addButton = createButton('Add Cat'); // Create an Add Cat button
@@ -13,8 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(0); 
-  image(backgroundImage, 0, 0 ,width, height )
+  background(0,127,0); 
   
 
   for (let i = 0; i < cats.length; i++) {
@@ -67,3 +64,4 @@ class Cat {
     triangle(this.x + 25, this.y - 80, this.x + 40, this.y - 100, this.x + 10, this.y - 100); // Right ear
   }
 }
+ //* wasnt able to add the origional background on to visual studio code as it wouldnt upload*//
